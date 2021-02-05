@@ -47,19 +47,51 @@ function verify(arrayP) {
             //location.reload();
             //document.getElementById('table').style.background = 'aqua';
             resetColor();
-            var EndGame = true;
+            EndGame = true;
         }if(arrayP[3]==1 & arrayP[6]==1){
             confirm('play again');
             //location.reload();
             //document.getElementById('table').style.background = 'aqua';
             resetColor();
-            var EndGame = true;
+            EndGame = true;
         }if(arrayP[4]==1 & arrayP[8]==1){
             confirm('play again');
             resetColor();
             //document.getElementById('table').style.background = 'aqua';
             //location.reload();
-            var EndGame = true;
+            EndGame = true;
+        }
+    }
+    
+    if(arrayP[2]==1){
+        if(arrayP[5]==1 & arrayP[8]==1){
+            confirm('play again');
+            resetColor();
+            EndGame = true;
+        }if(arrayP[4]==1 & arrayP[6]==1){
+            confirm('play again');
+            resetColor();
+            EndGame = true;
+        }
+    }
+    
+    if(arrayP[4]==1){
+        if(arrayP[1]==1 & arrayP[7]==1){
+            confirm('play again');
+            resetColor();
+            EndGame = true;
+        }if(arrayP[3]==1 & arrayP[5]==1){
+            confirm('play again');
+            resetColor();
+            EndGame = true;
+        }
+    }
+    
+    if(arrayP[6]==1){
+        if(arrayP[7]==1 & arrayP[8]==1){
+            confirm('play again');
+            resetColor();
+            EndGame = true;
         }
     }
 }

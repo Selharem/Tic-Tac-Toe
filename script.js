@@ -5,8 +5,9 @@ var playedX = [0,0,0,0,0,0,0,0,0]
 var playedY = [0,0,0,0,0,0,0,0,0]
 var EndGame = false;
 
-document.getElementById('table').style.backgroundColor  = 'red';
-document.getElementById('table').style.color  = 'red';
+//document.getElementById('table').style.backgroundColor  = 'red';
+//document.getElementById('table').style.color  = 'red';
+document.getElementsByTagName('table').style.color = 'red';
 
 
 function choose(x) {
@@ -39,7 +40,8 @@ function verify(arrayP) {
     if(arrayP[0]==1){
         if(arrayP[1]==1 & arrayP[2]==1){
             confirm('play again');
-            document.getElementById('table').style.background = 'aqua';
+            document.getElementById(0).style.background = 'aqua';
+            resetColor();
             var EndGame = true;
         }if(arrayP[3]==1 & arrayP[6]==1){
             confirm('play again');
@@ -50,6 +52,13 @@ function verify(arrayP) {
             document.getElementById('table').style.background = 'aqua';
             var EndGame = true;
         }
+    }
+}
+
+function resetColor() {
+    for(var i=0;i<9;i++){
+        displayX[i] = 0; 
+        document.getElementById(i).style.background = 'aqua';
     }
 }
 

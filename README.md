@@ -1,6 +1,7 @@
 # Tic-Tac-Toe
 
 This is a Tic-Tac-Toe game with Vanilla JavaScript. Feel free to contribute to it if you like!
+
 Click here if you wanna play online : https://codepen.io/50UF14N3/full/PobZMJp
 
 # Getting Started
